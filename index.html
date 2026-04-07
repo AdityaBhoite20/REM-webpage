@@ -951,19 +951,13 @@
     }
 
     .about-avatar {
-      width: 100px;
-      height: 100px;
+      width: 110px;
+      height: 110px;
       border-radius: 50%;
-      background: linear-gradient(135deg, var(--accent) 0%, var(--gold) 100%);
+      object-fit: cover;
+      display: block;
       margin: 0 auto 1.25rem;
-      display: flex;
-      align-items: center;
-      justify-content: center;
-      font-family: 'Playfair Display', serif;
-      font-size: 2.2rem;
-      font-weight: 700;
-      color: #fff;
-      letter-spacing: -.02em;
+      border: 3px solid var(--accent);
     }
 
     .about-name {
@@ -1258,7 +1252,7 @@
     <div class="about-grid">
       <!-- Profile card -->
       <div class="about-card">
-        <div class="about-avatar">AB</div>
+        <img src="images/profile.jpg" class="about-avatar">
         <div class="about-name">Aditya Bhoite</div>
         <div class="about-role">B.E. Electronics & Computer Science Engineering · Semester 8</div>
         <div class="about-stat-row">
@@ -1433,6 +1427,13 @@
         file: "assignments/REM video based quiz.pdf",
         fileType: "pdf",
         date: "2026-03-25"
+      }
+      {
+        id: 9,
+        title: "Renewable Energy Comparative Review",
+        file: "A Comparative Review with Focus on India.pdf",
+        type: "pdf",
+        date: "2024-04-01"
       }
     ];
 
